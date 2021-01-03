@@ -219,5 +219,21 @@ Y[0]='p'
 print(Y)
 print(X)
 
+print("################################")
+print("# リストはどのような時に使うか #")
+print("################################")
+seat = []
+min = 0
+max = 5
+print(min <= len(seat) < max)
+seat.append('p')
+seat.append('p')
+seat.append('p')
+seat.append('p')
+seat.append('p')
+print(min <= len(seat) < max)
+seat.pop(0)
+print(min <= len(seat) < max)
+
 
 
