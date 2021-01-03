@@ -1,0 +1,97 @@
+#############
+# 出力しよう#
+#############
+1 <class 'int'>
+Mike <class 'str'>
+True <class 'bool'>
+Hi,Mike
+#################
+# 文字列を扱おう#
+#################
+hello
+hello
+I don't know
+I don't know
+say "I don't know"
+say "I don't know"
+hello.
+How are you?
+C:\name\name
+line1
+line2
+line3
+Hi.Hi.Hi.Mike.
+Python
+aaaaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbb
+##########################################
+# 文字列のインデックスとスライスを扱おう #
+##########################################
+p
+y
+n
+py
+tho
+py
+py
+thon
+jython
+6
+##############################
+# 文字列のメソッドを扱おう！ #
+##############################
+My name is Mike. Hi Mike.
+True
+False
+11
+20
+M
+2
+My name is mike. hi mike.
+My Name Is Mike. Hi Mike.
+MY NAME IS MIKE. HI MIKE.
+my name is mike. hi mike.
+My name is Nancy. Hi Nancy.
+######################
+# 文字を代入しよう！ #
+######################
+a is a
+a is test
+a is 1 2 3
+a is 1 2 3
+a is 3 2 1
+My name is Jun Sakai
+My name is Jun Sakai. Watashi ha Sakai Jun
+My name is Jun Sakai. Watashi ha Sakai Jun
+1
+1
+<class 'str'>
+3.14
+############################
+# f-stringを使ってみよう！ #
+############################
+a is a
+a is 1,2,3
+a is 3,2,1
+My name is JunSakai. Watashi ha Sakai Jun
+############################
+# リスト型を使ってみよう！ #
+############################
+1
+20
+2
+1
+[1, 20]
+[1, 20]
+[4, 50, 2, 1, 2]
+[4, 50, 2]
+[1, 20, 4, 50, 2, 1, 2]
+7
+<class 'list'>
+['a', 'b', 'c', 'd', 'e', 'f', 'g']
+[2, 4, 6, 8]
+[10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+[['a', 'b', 'c'], [1, 2, 3]]
+['a', 'b', 'c']
+[1, 2, 3]
+b
+3

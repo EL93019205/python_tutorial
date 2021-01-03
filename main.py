@@ -3,13 +3,17 @@ num = 1
 name = 'Mike'
 is_ok = True
 
-# 出力しよう
+print("#############")
+print("# 出力しよう#")
+print("#############")
 print(num, type(num))
 print(name, type(name))
 print(is_ok, type(is_ok))
 print('Hi','Mike',sep=',',end='\n')
 
-# 文字列を扱おう
+print("#################")
+print("# 文字列を扱おう#")
+print("#################")
 print('hello')
 print("hello")
 print("I don't know")
@@ -29,7 +33,9 @@ s = ('aaaaaaaaaaaaaaaaaa'
      'bbbbbbbbbbbbbbbbbb')
 print(s)
 
-# 文字列のインデックスとスライスを扱おう
+print("##########################################")
+print("# 文字列のインデックスとスライスを扱おう #")
+print("##########################################")
 word = 'python'
 print(word[0])
 print(word[1])
@@ -44,7 +50,9 @@ print(word[:])
 n = len(word)
 print(n)
 
-#文字列のメソッドを扱おう！
+print("##############################")
+print("# 文字列のメソッドを扱おう！ #")
+print("##############################")
 s = 'My name is Mike. Hi Mike.'
 print(s)
 is_start=s.startswith('My')
@@ -61,8 +69,9 @@ print(s.upper())
 print(s.lower())
 print(s.replace('Mike','Nancy'))
 
-
-# 文字を代入しよう！
+print("######################")
+print("# 文字を代入しよう！ #")
+print("######################")
 print('a is {}'.format('a'))
 print('a is {}'.format('test'))
 print('a is {} {} {}'.format(1,2,3))
@@ -79,7 +88,9 @@ print(type(x))
 print(str(3.14))
 str(True)
 
-# f-stringを使ってみよう！
+print("############################")
+print("# f-stringを使ってみよう！ #")
+print("############################")
 a = 'a'
 print(f'a is {a}')
 
@@ -90,6 +101,40 @@ print(f'a is {z},{y},{x}')
 name = 'Jun'
 family = 'Sakai'
 print(f'My name is {name}{family}. Watashi ha {family} {name}')
+
+print("############################")
+print("# リスト型を使ってみよう！ #")
+print("############################")
+l=[1,20,4,50,2,1,2]
+print(l[0])
+print(l[1])
+print(l[-1])
+print(l[-2])
+print(l[0:2])
+print(l[:2])
+print(l[2:])
+print(l[2:5])
+print(l[:])
+print(len(l))
+print(type(l))
+print(list('abcdefg'))
+#print(l[100])
+n=[1,2,3,4,5,6,7,8,9,10]
+print(n[1:8:2])
+print(n[::-1])
+a=['a','b','c']
+n=[1,2,3]
+x=[a,n]
+print(x)
+print(x[0])
+print(x[1])
+print(x[0][1])
+print(x[1][2])
+
+
+
+
+
 
 
 
