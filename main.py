@@ -131,6 +131,41 @@ print(x[1])
 print(x[0][1])
 print(x[1][2])
 
+print("##########################")
+print("# リストの操作をしよう！ #")
+print("##########################")
+s=['a','b','c','d','e','f','g']
+print(s)
+s[0]='x'
+print(s)
+s[2:5]=['C','D','E']
+s[:]=[]
+print(s)
+n=[1,2,3,4,5,6,7,8,9,10]
+n.append(100)
+print(n)
+n.insert(0,200)
+print(n)
+n.pop()
+print(n)
+n.pop(0)
+print(n)
+del n[0]
+del n
+n=[1,2,2,2,3]
+n.remove(2)
+print(n)
+a=[1,2,3,4,5]
+b=[6,7,8,9,10]
+x=a+b
+print(x)
+a+=b
+print(a)
+x = [1,2,3,4,5]
+y = [6,7,8,9,10]
+x.extend(y)
+
+
 
 
 
