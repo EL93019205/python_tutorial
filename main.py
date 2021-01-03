@@ -321,6 +321,83 @@ answer.append('B')
 print(choose_from_two)
 print(answer)
 
+print("""\
+########################
+# 辞書型を扱ってみよう #
+########################\
+""")
+d = {'x':10, 'y': 20}
+print(d)
+print(type(d))
+d['x']=100
+print(d)
+d['x']='XXXX'
+print(d)
+d['z']=200
+print(d)
+d[1]=10000
+print(d)
+print(dict(a=10,b=20))
+d=dict([('a',10),('b',20)])
+print(d)
+d={'x':10,'y':20}
+print(d.keys())
+print(d.values())
+d2={'x':1000,'j':500}
+d.update(d2)
+print(d)
+print(d2)
+
+print(d['x'])
+print(d.get('x'))
+#print(d['z'])
+print(d.get('z'))
+r=d.get('z')
+print(r)
+print(type(r))
+
+print(d.get('x'))
+print(d.pop('x'))
+print(d)
+del d['y']
+print(d)
+d={'a':100,'b':200}
+d.clear()
+print(d)
+d={'a':100,'b':200}
+print('a' in d)
+print('j' in d)
+
+x = {'a':1}
+y = x
+y['a']=1000
+print(x)
+print(y)
+x = {'a':1}
+y = x.copy()
+y['a']=1000
+print(x)
+print(y)
+
+fruits = {
+    'apple': 100,
+    'banana': 200,
+    'orange': 300,
+
+}
+
+print(fruits['apple'])
+
+
+
+
+
+
+
+
+
+
+
 
 
 
