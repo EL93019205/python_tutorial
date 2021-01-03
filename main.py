@@ -187,4 +187,37 @@ x= '###'.join(to_split)
 print(x)
 #print(help(list))
 
+print("##########################")
+print("# リストをコピーしよう！ #")
+print("##########################")
+i=[1,2,3,4,5]
+j=i
+j[0]=100
+print('j=',j)
+print('i=',i)
+print(type(i))
+print(type(j))
+# pythonにも値渡しと参照渡しの概念があるので注意
+x=[1,2,3,4,5]
+y=x.copy()
+y=x[:]
+y[0]=100
+print('x=',x)
+print('y=',y)
+X=20
+Y=X
+Y=5
+print(id(X))
+print(id(Y))
+print(Y)
+print(X)
+X=['a','b']
+Y=X
+print(id(X))
+print(id(Y))
+Y[0]='p'
+print(Y)
+print(X)
+
+
 
