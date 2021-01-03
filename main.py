@@ -309,3 +309,19 @@ print(a,b)
 a,b=b,a
 print(a,b)
 
+print("""\
+##################
+# タプルの使い所 #
+##################\
+""")
+choose_from_two = ('A','B','C')
+answer=[]
+answer.append('A')
+answer.append('B')
+print(choose_from_two)
+print(answer)
+
+
+
+
+
