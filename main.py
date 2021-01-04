@@ -535,7 +535,19 @@ if is_ok:
 	print('OK')
 else:
 	print('NO!')
-
+print("""\
+####################
+# Noneを判定しよう #
+####################\
+""")
+is_empty=None
+print(is_empty)
+print(type(is_empty))
+if is_empty is not None:
+	print('None!!!')
+print(1 == True)
+#print(1 is True)
+print(None is None)
 
 
 
