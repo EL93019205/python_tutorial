@@ -720,4 +720,42 @@ def add_num(a: int,b: int) -> int:
 r=add_num('a','b')
 print(r)
 
+print("""\
+####################################################
+# 位置引数とキーワード引数とデフォルト引数を扱おう #
+####################################################\
+""")
+def menu(entree='beef',drink='wine',desert='ice'):
+	print('entree=',entree)
+	print('drink=',drink)
+	print('desert=',desert)
+
+#menu('beef', desert='ice', drink='beer')
+menu()
+menu('chicken',drink='beer')
+
+def test_func(x,l=None):
+	if l is None:
+		l = []
+	l.append(x)
+	return l
+
+y=[1,2,3]
+r=test_func(100,y)
+print(r)
+
+
+y=[1,2,3]
+r=test_func(200,y)
+print(r)
+
+
+r=test_func(100)
+print(r)
+
+r=test_func(100)
+print(r)
+#デフォルト引数に辞書型やリスト型を指定すると不具合に繋がりやすい
+#その場合はNoneを指定し、関数内で空のリストや辞書を入れる
+
 
