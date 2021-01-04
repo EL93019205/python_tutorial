@@ -710,4 +710,14 @@ print(result)
 result = what_is_this('yellow')
 print(result)
 
+print("""\
+####################################
+# 関数の引数と返り値の宣言について #
+####################################\
+""")
+def add_num(a: int,b: int) -> int:
+	return a+b
+r=add_num('a','b')
+print(r)
+
 
