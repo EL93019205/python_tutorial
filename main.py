@@ -548,6 +548,20 @@ if is_empty is not None:
 print(1 == True)
 #print(1 is True)
 print(None is None)
+print("""\
+################################
+# while,continue,breakを扱おう #
+################################\
+""")
+count=0
+while True:
+	if count >= 5:
+		break
+	if count == 2:
+		count+=1
+		continue
+	print(count)
+	count+=1
 
 
 
