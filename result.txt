@@ -349,3 +349,12 @@ hello
 1 banana
 2 orange
 <class 'enumerate'>
+###################
+# zip関数を扱おう #
+###################
+Mon apple coffee
+Tue banana tea
+Wed orange beer
+Mon apple coffee
+Tue banana tea
+Wed orange beer
