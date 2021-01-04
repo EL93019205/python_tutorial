@@ -665,5 +665,18 @@ for i in range(len(days)):
 for day, fruit, drink in zip(days,fruits,drinks):
 	print(day,fruit,drink)
 
+print("""\
+###########################
+# 辞書をfor文で処理しよう #
+###########################\
+""")
+d = {'x': 100, 'y':200}
+print(d)
+print(d.items())
+
+for k, v in d.items():
+	print(k, ':', v)
+
+
 
 
