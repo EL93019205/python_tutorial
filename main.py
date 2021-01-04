@@ -576,5 +576,21 @@ while count < 5:
 	count+=1
 else:
 	print('done')
+print("""\
+#####################
+# input関数を扱おう #
+#####################\
+""")
+while True:
+	word=input('Enter:')
+	if word=='ok':
+		break
+	print('next')
+
+
+
+
+
+
 
 
