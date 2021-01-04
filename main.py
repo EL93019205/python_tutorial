@@ -207,14 +207,14 @@ print('y=',y)
 X=20
 Y=X
 Y=5
-print(id(X))
-print(id(Y))
+#print(id(X))
+#print(id(Y))
 print(Y)
 print(X)
 X=['a','b']
 Y=X
-print(id(X))
-print(id(Y))
+#print(id(X))
+#print(id(Y))
 Y[0]='p'
 print(Y)
 print(X)
@@ -386,7 +386,7 @@ fruits = {
 
 }
 
-print(fruits['apple'])
+#print(fruits['apple'])
 
 print("""\
 ########################
@@ -623,5 +623,22 @@ for fruit in ['apple', 'banana', 'orange']:
 	print(fruit)
 else:
 	print('I ate all!')
+
+print("""\
+#####################
+# range関数を扱おう #
+#####################\
+""")
+
+num_list=[0,1,2,3,4,5,6,7,8,9]
+for i in num_list:
+	print(i)
+
+for i in range(2,10,3):
+	print(i)
+for i in range(10):
+	print(i,'hello')
+for _ in range(10):
+	print('hello')
 
 
