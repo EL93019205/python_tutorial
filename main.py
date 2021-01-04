@@ -424,8 +424,18 @@ f = ['apple', 'banana', 'apple', 'banana']
 kind = set(f)
 print(kind)
 
-
-
+print("""\
+コメントを扱おう
+\
+""")
+print('XXXXX')
+# コメント
+"""
+ブロックコメント
+"""
+print('XXXXX')
+# コメントは上に書くスタイル
+some_value = 100 # Apple Value
 
 
 
