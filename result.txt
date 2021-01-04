@@ -225,7 +225,6 @@ set()
 <class 'dict'>
 {}
 {'D'}
-{'banana', 'apple'}
 ####################
 # コメントを扱おう #
 ####################
@@ -343,3 +342,10 @@ hello
 hello
 hello
 hello
+#########################
+# emumerate関数を扱おう #
+#########################
+0 apple
+1 banana
+2 orange
+<class 'enumerate'>

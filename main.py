@@ -422,7 +422,7 @@ A_friends = {'B','D','E','F'}
 print(my_friends & A_friends)
 f = ['apple', 'banana', 'apple', 'banana']
 kind = set(f)
-print(kind)
+#print(kind)
 
 print("""\
 ####################
@@ -640,5 +640,15 @@ for i in range(10):
 	print(i,'hello')
 for _ in range(10):
 	print('hello')
+print("""\
+#########################
+# emumerate関数を扱おう #
+#########################\
+""")
+i=0
+for i, fruit in enumerate(['apple', 'banana','orange']):
+	print(i,fruit)
+#print(enumerate(['apple','banana','orange']))
+print(type(enumerate(['apple','banana','orange'])))
 
 
