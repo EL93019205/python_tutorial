@@ -563,6 +563,18 @@ while True:
 	print(count)
 	count+=1
 
-
+print("""\
+########################
+# while else文を扱おう #
+########################\
+""")
+count = 0
+while count < 5:
+	if count==1:
+		break
+	print(count)
+	count+=1
+else:
+	print('done')
 
 
