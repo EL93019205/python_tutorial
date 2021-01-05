@@ -530,9 +530,14 @@ stop
 2
 3
 <class 'generator'>
-<generator object <genexpr> at 0x7fcf7e9b2f90>
+<generator object <genexpr> at 0x7fe7798b2f90>
 0
 2
 4
 6
 8
+##############################
+# 名前空間とスコープを扱おう #
+##############################
+f
+Test func doc

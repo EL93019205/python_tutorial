@@ -1043,8 +1043,19 @@ for x in g:
 	print(x)
 #ジェネレーターとタプルは表記が似ているので要注意！
 
+print("""\
+##############################
+# 名前空間とスコープを扱おう #
+##############################\
+""")
+animal = 'cat'
 
-
+def f():
+	"""Test func doc"""
+	print(f.__name__)
+	print(f.__doc__)
+f()
+#print('global:',globals())
 
 
 
