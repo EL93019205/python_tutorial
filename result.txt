@@ -558,3 +558,7 @@ main.py
 option1
 option2
 option3
+########################
+# Import文とASを扱おう #
+########################
+hello!hello!

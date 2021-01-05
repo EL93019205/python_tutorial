@@ -1106,4 +1106,17 @@ print(sys.argv)
 print('test')
 for i in sys.argv:
 	print(i)
+print("""\
+########################
+# Import文とASを扱おう #
+########################\
+""")
+#import lesson_package.utils
+from lesson_package import utils
+#from lesson_package import utils as u
+
+#from lesson_package.utils import say_twice
+r=utils.say_twice('hello')
+print(r)
+
 
