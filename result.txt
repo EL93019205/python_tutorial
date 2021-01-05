@@ -398,3 +398,9 @@ desert= ice
 word=Hi!
 Mike
 Nancy
+################################
+# キーワード引数を辞書化しよう #
+################################
+banana
+('apple', 'orange')
+{'entree': 'beef', 'drink': 'coffee'}
