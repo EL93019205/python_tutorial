@@ -1057,6 +1057,25 @@ def f():
 f()
 #print('global:',globals())
 
+print("""\
+####################
+# 例外処理を扱おう #
+####################\
+""")
+l=[1,2,3]
+i=5
+try:
+	l[0]
+except IndexError as ex:
+	print("Don't worry: {}".format(exi))
+except NameError as ex:
+	print(ex)
+except Exception as ex:
+	print('other:{}'.format(ex))
+else:
+	print('done')
+finally:
+	print('clean up')
 
 
 
