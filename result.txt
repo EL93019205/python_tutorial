@@ -404,3 +404,27 @@ Nancy
 banana
 ('apple', 'orange')
 {'entree': 'beef', 'drink': 'coffee'}
+######################
+# Docstringsを扱おう #
+######################
+Example function with types documented in the docstring.
+	
+	Args:
+		param1(int): The first parameter.
+		param2(str): The second parameter.
+
+	Returns:
+		bool: The return value. True for success, False otherwise
+	
+Help on function example_func in module __main__:
+
+example_func(param1, param2)
+    Example function with types documented in the docstring.
+    
+    Args:
+            param1(int): The first parameter.
+            param2(str): The second parameter.
+    
+    Returns:
+            bool: The return value. True for success, False otherwise
+
