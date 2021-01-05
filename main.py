@@ -907,6 +907,49 @@ def sample_func(word):
 change_words(l,lambda word: word.capitalize())
 change_words(l,lambda word: word.lower())
 
+print("""\
+################################
+# ジェネレーターを扱ってみよう #
+################################\
+""")
+l = ['Good morning', 'Good afternoon', 'Good night']
+for i in l:
+	print(i)
+
+def greeting():
+	yield 'Good morning'
+	yield 'Good afternoon'
+	yield 'Good night'
+
+for g in greeting():
+	print(g)
+
+g = greeting()
+print(next(g))
+print("aaa")
+print(next(g))
+print("@@@")
+print(next(g))
+def counter(num=10):
+	for _ in range(num):
+		yield 'run'
+	while True:
+		yield 'stop'
+
+c = counter()
+print(next(c))
+print(next(c))
+print(next(c))
+print(next(c))
+print(next(c))
+print(next(c))
+print(next(c))
+print(next(c))
+print(next(c))
+print(next(c))
+print(next(c))
+print(next(c))
+print(next(c))
 
 
 

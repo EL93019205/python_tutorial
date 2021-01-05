@@ -470,3 +470,30 @@ thu
 fri
 sat
 sun
+################################
+# ジェネレーターを扱ってみよう #
+################################
+Good morning
+Good afternoon
+Good night
+Good morning
+Good afternoon
+Good night
+Good morning
+aaa
+Good afternoon
+@@@
+Good night
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+stop
+stop
+stop
