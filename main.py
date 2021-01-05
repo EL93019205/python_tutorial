@@ -844,6 +844,50 @@ ca2=circle_area_func(3.141592)
 print(ca1(10))
 print(ca2(10))
 
+print("""\
+##############################
+# デコレーターを扱ってみよう #
+##############################\
+""")
 
+def print_more(func):
+	def wrapper(*args, **kwargs):
+		print("***")
+		print('func:' ,func.__name__)
+		print('args:',args)
+		print('kwargs:',kwargs)
+		result=func(*args,**kwargs)
+		print('result:',result)
+		print("***")
+		return result
+	return wrapper
+
+
+def print_info(func):
+	def wrapper(*args,**kwargs):
+		print('start')
+		result=func(*args,**kwargs)
+		print('end')
+		return result
+	return wrapper
+
+@print_info
+@print_more
+def add_num(a,b):
+	return a+b
+
+@print_info
+def sub_num(a,b):
+	return a-b
+
+r=add_num(10,20)
+print(r)
+
+r=sub_num(20,10)
+print(r)
+
+#f=print_into(add_num)
+#r=f(10,20)
+#print(r)
 
 
