@@ -758,4 +758,17 @@ print(r)
 #デフォルト引数に辞書型やリスト型を指定すると不具合に繋がりやすい
 #その場合はNoneを指定し、関数内で空のリストや辞書を入れる
 
+print("""\
+##############################
+# 位置引数のタプル化を扱おう #
+##############################\
+""")
+def say_something(word,*args):
+	print('word='+word)
+	for arg in args:
+		print(arg)
+
+t=('Mike','Nancy')
+say_something('Hi!' , *t)
+
 
