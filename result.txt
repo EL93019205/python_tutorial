@@ -549,3 +549,12 @@ clean up
 # 独自例外を作成しよう #
 ########################
 This is my fault. Go next
+##############################
+# コマンドライン引数を扱おう #
+##############################
+['main.py', 'option1', 'option2', 'option3']
+test
+main.py
+option1
+option2
+option3

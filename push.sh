@@ -1,5 +1,5 @@
 git add .
 git commit -m $1
-git push
+git push -u origin section6 
 vim main.py
 

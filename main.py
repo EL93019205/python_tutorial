@@ -1096,4 +1096,14 @@ try:
 except UppercaseError as exc:
 	print('This is my fault. Go next')
 
+print("""\
+##############################
+# コマンドライン引数を扱おう #
+##############################\
+""")
+import sys
+print(sys.argv)
+print('test')
+for i in sys.argv:
+	print(i)
 
