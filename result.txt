@@ -428,3 +428,7 @@ example_func(param1, param2)
     Returns:
             bool: The return value. True for success, False otherwise
 
+##############
+# 関数内関数 #
+##############
+6
