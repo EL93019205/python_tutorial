@@ -530,7 +530,6 @@ stop
 2
 3
 <class 'generator'>
-<generator object <genexpr> at 0x7ff38e2b2f90>
 0
 2
 4

@@ -1037,7 +1037,7 @@ print(next(g))
 g=(i for i in range(10) if i % 2 == 0)
 
 print(type(g))
-print(g)
+#print(g)
 
 for x in g:
 	print(x)
