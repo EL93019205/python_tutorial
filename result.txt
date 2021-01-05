@@ -530,7 +530,7 @@ stop
 2
 3
 <class 'generator'>
-<generator object <genexpr> at 0x7ffd89ab2f90>
+<generator object <genexpr> at 0x7ff38e2b2f90>
 0
 2
 4
@@ -546,3 +546,7 @@ Test func doc
 ####################
 done
 clean up
+########################
+# 独自例外を作成しよう #
+########################
+This is my fault. Go next
