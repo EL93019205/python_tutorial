@@ -453,3 +453,20 @@ end
 start
 end
 10
+########################
+# ラムダを扱ってみよう #
+########################
+Mon
+Tue
+Wed
+Thu
+Fri
+Sat
+Sun
+mon
+tue
+wed
+thu
+fri
+sat
+sun
