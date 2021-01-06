@@ -1219,14 +1219,28 @@ import termcolor
 import lesson_package
 
 # 自分のライブラリ
+#import config
+
+#print(collections.__file__)
+#print(termcolor.__file__)
+#print(lesson_package.__file__)
+#print(config.__file__)
+
+#print(sys.path)
+print("""\
+#######################################
+# __name__と__main__の扱いに注意しよう#
+#######################################\
+""")
 import config
+import lesson_package.talk.animal
+def main():
+	lesson_package.talk.animal.sing()
 
-print(collections.__file__)
-print(termcolor.__file__)
-print(lesson_package.__file__)
-print(config.__file__)
+print('main:',__name__)
+if __name__ == '__main__':
+	main()
 
-print(sys.path)
 
 
 
