@@ -1241,6 +1241,25 @@ print('main:',__name__)
 if __name__ == '__main__':
 	main()
 
+print("""\
+######################
+# クラスを定義しよう #
+######################\
+""")
+s='asdkfjakfd'
+print(s.capitalize())
+class Person(object):
+	def say_something(self):
+		print('hello')
+
+person=Person()
+person.say_something()
+
+def person(name):
+	if name == 'A':
+		print('hello')
+
+
 
 
 
