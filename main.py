@@ -1202,4 +1202,32 @@ print(colored('test','red'))
 print(colored('test','green'))
 #print(help(colored))
 
+print("""\
+##################################
+# imoprtする際の記述に注意しよう #
+##################################\
+""")
+# 標準ライブラリ
+import collections
+import os
+import sys
+
+# サードパーティーライブラリ
+import termcolor
+
+# 他チームのライブラリ
+import lesson_package
+
+# 自分のライブラリ
+import config
+
+print(collections.__file__)
+print(termcolor.__file__)
+print(lesson_package.__file__)
+print(config.__file__)
+
+print(sys.path)
+
+
+
 

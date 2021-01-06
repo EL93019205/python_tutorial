@@ -594,3 +594,11 @@ defaultdict(<class 'int'>, {'f': 4, 'j': 5, 'a': 4, 's': 2, 'k': 3, 'l': 3, ';':
 ########################################
 [31mtest[0m
 [32mtest[0m
+##################################
+# imoprtする際の記述に注意しよう #
+##################################
+/Users/el93019205/opt/anaconda3/lib/python3.8/collections/__init__.py
+/Users/el93019205/opt/anaconda3/lib/python3.8/site-packages/termcolor.py
+/Users/el93019205/projects/python_tutorial/lesson_package/__init__.py
+/Users/el93019205/projects/python_tutorial/config.py
+['/Users/el93019205/projects/python_tutorial', '/Users/el93019205/opt/anaconda3/lib/python38.zip', '/Users/el93019205/opt/anaconda3/lib/python3.8', '/Users/el93019205/opt/anaconda3/lib/python3.8/lib-dynload', '/Users/el93019205/opt/anaconda3/lib/python3.8/site-packages', '/Users/el93019205/opt/anaconda3/lib/python3.8/site-packages/aeosa']
