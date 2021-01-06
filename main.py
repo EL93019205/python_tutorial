@@ -1096,4 +1096,152 @@ try:
 except UppercaseError as exc:
 	print('This is my fault. Go next')
 
+print("""\
+##############################
+# コマンドライン引数を扱おう #
+##############################\
+""")
+import sys
+print(sys.argv)
+print('test')
+for i in sys.argv:
+	print(i)
+print("""\
+########################
+# Import文とASを扱おう #
+########################\
+""")
+#import lesson_package.utils
+#from lesson_package import utils as u
+
+#from lesson_package.utils import say_twice
+#r=utils.say_twice('hello')
+#print(r)
+
+print("""\
+######################################
+# 絶対パスと相対パスのImportを扱おう #
+######################################\
+""")
+from lesson_package.talk import human
+print(human.sing())
+print(human.cry())
+
+print("""\
+###############################################################
+# アスタリスクのインポートと__init__.pyと__all_の意味を知ろう #
+###############################################################\
+""")
+#from lesson_package.talk import animal
+from lesson_package.talk import *
+print(animal.sing())
+print(animal.cry())
+# import *は好まれていない
+
+from lesson_package.tools import utils
+print("""\
+#######################
+# ImportErrorを扱おう #
+#######################\
+""")
+try:
+	from lesson_package import utils
+except ImportError:
+	from lesson_package.tools import utils
+
+print(utils.say_twice('word'))
+print("""\
+########################
+# 組み込み関数を扱おう #
+########################\
+""")
+#print(globals())
+ranking={
+	'A': 100,
+	'B': 85,
+	'C': 95
+}
+
+for key in ranking:
+	print(key)
+ranking.get('A')
+print(sorted(ranking,key=ranking.get,reverse=True))
+print("""\
+##########################
+# 標準ライブラリを扱おう #
+##########################\
+""")
+s = "fjaskl;jfljslkjzmxnfkhjaiueorqp,mbnzvhhiuahfena"
+d={}
+for c in s:
+	if c not in d:
+		d[c]=0
+	d[c]+=1
+print(d)
+
+d={}
+for c in s:
+	d.setdefault(c,0)
+	d[c] += 1
+print(d)
+
+from collections import defaultdict
+d=defaultdict(int)
+for c in s:
+	d[c] += 1
+print(d)
+print(d['f'])
+
+print("""\
+########################################
+# サードパーティーのライブラリを扱おう #
+########################################\
+""")
+from termcolor import colored
+print(colored('test','red'))
+print(colored('test','green'))
+#print(help(colored))
+
+print("""\
+##################################
+# imoprtする際の記述に注意しよう #
+##################################\
+""")
+# 標準ライブラリ
+import collections
+import os
+import sys
+
+# サードパーティーライブラリ
+import termcolor
+
+# 他チームのライブラリ
+import lesson_package
+
+# 自分のライブラリ
+#import config
+
+#print(collections.__file__)
+#print(termcolor.__file__)
+#print(lesson_package.__file__)
+#print(config.__file__)
+
+#print(sys.path)
+print("""\
+#######################################
+# __name__と__main__の扱いに注意しよう#
+#######################################\
+""")
+import config
+import lesson_package.talk.animal
+def main():
+	lesson_package.talk.animal.sing()
+
+print('main:',__name__)
+if __name__ == '__main__':
+	main()
+
+
+
+
 
