@@ -1126,3 +1126,20 @@ print("""\
 from lesson_package.talk import human
 print(human.sing())
 print(human.cry())
+
+print("""\
+###############################################################
+# アスタリスクのインポートと__init__.pyと__all_の意味を知ろう #
+###############################################################\
+""")
+#from lesson_package.talk import animal
+from lesson_package.talk import *
+print(animal.sing())
+print(animal.cry())
+# import *は好まれていない
+
+
+
+
+
+
