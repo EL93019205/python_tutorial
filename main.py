@@ -1112,11 +1112,17 @@ print("""\
 ########################\
 """)
 #import lesson_package.utils
-from lesson_package import utils
 #from lesson_package import utils as u
 
 #from lesson_package.utils import say_twice
-r=utils.say_twice('hello')
-print(r)
+#r=utils.say_twice('hello')
+#print(r)
 
-
+print("""\
+######################################
+# 絶対パスと相対パスのImportを扱おう #
+######################################\
+""")
+from lesson_package.talk import human
+print(human.sing())
+print(human.cry())
