@@ -1192,6 +1192,14 @@ for c in s:
 print(d)
 print(d['f'])
 
-
+print("""\
+########################################
+# サードパーティーのライブラリを扱おう #
+########################################\
+""")
+from termcolor import colored
+print(colored('test','red'))
+print(colored('test','green'))
+#print(help(colored))
 
 
