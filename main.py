@@ -1150,6 +1150,27 @@ except ImportError:
 	from lesson_package.tools import utils
 
 print(utils.say_twice('word'))
+print("""\
+########################
+# 組み込み関数を扱おう #
+########################\
+""")
+#print(globals())
+ranking={
+	'A': 100,
+	'B': 85,
+	'C': 95
+}
+
+for key in ranking:
+	print(key)
+ranking.get('A')
+print(sorted(ranking,key=ranking.get,reverse=True))
+
+
+
+
+
 
 
 

@@ -575,3 +575,10 @@ aslkjdflajsklfa!aslkjdflajsklfa!
 # ImportErrorを扱おう #
 #######################
 word!word!
+########################
+# 組み込み関数を扱おう #
+########################
+A
+B
+C
+['A', 'C', 'B']
