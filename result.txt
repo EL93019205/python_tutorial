@@ -607,3 +607,8 @@ main: __main__
 ######################
 Asdkfjakfd
 hello
+######################################
+# クラスを初期化しクラス変数を扱おう #
+######################################
+I am Mike. hello
+runrunrunrunrunrunrunrunrunrun

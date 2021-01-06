@@ -1259,6 +1259,34 @@ def person(name):
 	if name == 'A':
 		print('hello')
 
+print("""\
+######################################
+# クラスを初期化しクラス変数を扱おう #
+######################################\
+""")
+class Person(object):
+	def __init__(self,name):
+		self.name=name
+
+	def say_something(self):
+		print('I am {}. hello'.format(self.name))
+		self.run(10)
+
+	def run(self, num):
+		print('run'*num)
+
+person=Person('Mike')
+person.say_something()
+
+
+
+
+
+
+
+
+
+
 
 
 
