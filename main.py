@@ -1138,6 +1138,13 @@ print(animal.sing())
 print(animal.cry())
 # import *は好まれていない
 
+from lesson_package.tools import utils
+print("""\
+#######################
+# ImportErrorを扱おう #
+#######################\
+""")
+utils.say_twice('word')
 
 
 

@@ -571,3 +571,6 @@ cry!cry!
 ###############################################################
 asjdfkldajsflajslfj
 aslkjdflajsklfa!aslkjdflajsklfa!
+#######################
+# ImportErrorを扱おう #
+#######################
