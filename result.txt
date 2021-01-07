@@ -612,3 +612,10 @@ hello
 ######################################
 I am Mike. hello
 runrunrunrunrunrunrunrunrunrun
+########################################
+# コンストラクタとデストラクタを扱おう #
+########################################
+I am Mike. hello
+runrunrunrunrunrunrunrunrunrun
+goodbye
+#########
