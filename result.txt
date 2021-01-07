@@ -619,3 +619,13 @@ I am Mike. hello
 runrunrunrunrunrunrunrunrunrun
 goodbye
 #########
+######################
+# クラスを継承しよう #
+######################
+
+run
+#########
+run
+#########
+run
+auto run
