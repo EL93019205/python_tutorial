@@ -1709,15 +1709,15 @@ print(os.path.isdir('test.txt'))
 pathlib.Path('empty.txt').touch()
 os.remove('empty.txt')
 #os.mkdir('test_dir')
-os.mkdir('test_dir/test_dir2')
-print(os.listdir('test_dir'))
-pathlib.Path('test_dir/test_dir2/empty.txt').touch()
-print(glob.glob('test_dir/test_dir2/*'))
-shutil.copy('test_dir/test_dir2/empty.txt',
-			'test_dir/test_dir2/empty2.txt')
-print(glob.glob('test_dir/test_dir2/*'))
-shutil.rmtree('test_dir')
-print(glob.glob('test_dir/test_dir2/*'))
+#os.mkdir('test_dir/test_dir2')
+#print(os.listdir('test_dir'))
+#pathlib.Path('test_dir/test_dir2/empty.txt').touch()
+#print(glob.glob('test_dir/test_dir2/*'))
+#shutil.copy('test_dir/test_dir2/empty.txt',
+#			'test_dir/test_dir2/empty2.txt')
+#print(glob.glob('test_dir/test_dir2/*'))
+#shutil.rmtree('test_dir')
+#print(glob.glob('test_dir/test_dir2/*'))
 #print(os.getcwd())
 
 print("""\
@@ -1726,26 +1726,54 @@ print("""\
 #############################\
 """)
 import tarfile
+#if not os.path.isdir('test_dir'):
+#	os.mkdir('test_dir')
+#	os.mkdir('test_dir/sub_dir')
+#	with open('test_dir/test.txt','w') as f:
+#		f.write('test')
+#	with open('test_dir/sub_dir/sub_test.txt','w') as f:
+#		f.write('sub')
+#shutil.rmtree('test_dir')
+
+#with tarfile.open('test.tar.gz', 'w:gz') as tr:
+#	tr.add('test_dir')
+
+#with tarfile.open('test.tar.gz', 'r:gz') as tr:
+	#tr.extractall(path='test_tar')
+#	with tr.extractfile('test_dir/sub_dir/sub_test.txt') as f:
+#		print(f.read())
+
+print("""\
+#############################
+# zipfileの圧縮展開を行おう #
+#############################\
+""")
+import zipfile
+import glob
 if not os.path.isdir('test_dir'):
 	os.mkdir('test_dir')
 	os.mkdir('test_dir/sub_dir')
+	os.mkdir('test_dir/sub_dir/subsub_dir')
 	with open('test_dir/test.txt','w') as f:
 		f.write('test')
 	with open('test_dir/sub_dir/sub_test.txt','w') as f:
 		f.write('sub')
+	with open('test_dir/sub_dir/subsub_dir/subsub_test.txt','w') as f:
+		f.write('subsub')
+
+with zipfile.ZipFile('test.zip', 'w') as z:
+	#z.write('test_dir')
+	#z.write('test_dir/test.txt')
+	for f in glob.glob('test_dir/**', recursive=True):
+		print(f)
+		z.write(f)
+
+with zipfile.ZipFile('test.zip', 'r') as z:
+	#z.extractall('zzz2')
+	with z.open('test_dir/test.txt') as f:
+		print(f.read())	
+
 #shutil.rmtree('test_dir')
-
-with tarfile.open('test.tar.gz', 'w:gz') as tr:
-	tr.add('test_dir')
-
-with tarfile.open('test.tar.gz', 'r:gz') as tr:
-	#tr.extractall(path='test_tar')
-	with tr.extractfile('test_dir/sub_dir/sub_test.txt') as f:
-		print(f.read())
-
-
-
-
 
 
 
