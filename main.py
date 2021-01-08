@@ -1499,8 +1499,8 @@ class Adult(Person):
 			super().__init__(age)
 		else:
 			raise ValueError
-#	def drive(self):
-#		print('ok')
+	def drive(self):
+		print('ok')
 
 baby=Baby()
 #baby.drive()
@@ -1517,6 +1517,32 @@ class Car(object):
 
 car=Car()
 car.ride(adult)
+
+print("""\
+####################
+# 多重継承を扱おう #
+####################\
+""")
+class Person(object):
+	def talk(self):
+		print('talk')
+	def run(self):
+		print('person run')
+
+class Car(object):
+	def run(self):
+		print('car run')
+
+class PersonCarRobot(Car,Person):
+	def fly(self):
+		print('fly')
+
+person_car_robot = PersonCarRobot()
+person_car_robot.talk()
+person_car_robot.run()
+person_car_robot.fly()
+
+
 
 
 
