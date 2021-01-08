@@ -1634,6 +1634,25 @@ print(len(w))
 print(w+w2)
 print(w==w2)
 
+print("""\
+########################
+# ファイルを作成しよう #
+########################\
+""")
+f = open('test.txt', 'w')
+#使うのが多いのはこっち
+f.write('test')
+print('My','name','is','Mike',sep='#',end='!',file=f)
+f.close()
+
+
+
+
+
+
+
+
+
 
 
 
