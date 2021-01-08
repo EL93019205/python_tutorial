@@ -679,3 +679,10 @@ human
 human
 human
 about human 1999
+########################
+# 特殊メソッドを扱おう #
+########################
+Word!!!!!
+4
+testtest
+True
