@@ -1576,10 +1576,35 @@ d.add_word('add 3')
 d.add_word('add 4')
 print(d.words)
 
+print("""\
+################################################
+# クラスメソッドとスタティックメソッドを扱おう #
+################################################\
+""")
+def about(year):
+	print('about human {}'.format(year))
 
+class Person(object):
+	kind='human'
 
+	def __init__(self):
+		self.x=100
 
+	@classmethod
+	def what_is_your_kind(cls):
+		return cls.kind
+	
+	@staticmethod
+	def about(year):
+		print('about human {}'.format(year))
 
+a=Person()
+print(a.what_is_your_kind())
+b=Person
+print(b.what_is_your_kind())
+print(Person.kind)
+print(Person.what_is_your_kind())
+Person.about(1999)
 
 
 
