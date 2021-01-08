@@ -1708,7 +1708,7 @@ print(os.path.isdir('test.txt'))
 #os.rmdir('test_dir')
 pathlib.Path('empty.txt').touch()
 os.remove('empty.txt')
-os.mkdir('test_dir')
+#os.mkdir('test_dir')
 os.mkdir('test_dir/test_dir2')
 print(os.listdir('test_dir'))
 pathlib.Path('test_dir/test_dir2/empty.txt').touch()
@@ -1719,6 +1719,37 @@ print(glob.glob('test_dir/test_dir2/*'))
 shutil.rmtree('test_dir')
 print(glob.glob('test_dir/test_dir2/*'))
 #print(os.getcwd())
+
+print("""\
+#############################
+# tarfileの圧縮展開を行おう #
+#############################\
+""")
+import tarfile
+if not os.path.isdir('test_dir'):
+	os.mkdir('test_dir')
+	os.mkdir('test_dir/sub_dir')
+	with open('test_dir/test.txt','w') as f:
+		f.write('test')
+	with open('test_dir/sub_dir/sub_test.txt','w') as f:
+		f.write('sub')
+#shutil.rmtree('test_dir')
+
+with tarfile.open('test.tar.gz', 'w:gz') as tr:
+	tr.add('test_dir')
+
+with tarfile.open('test.tar.gz', 'r:gz') as tr:
+	#tr.extractall(path='test_tar')
+	with tr.extractfile('test_dir/sub_dir/sub_test.txt') as f:
+		print(f.read())
+
+
+
+
+
+
+
+
 
 
 
