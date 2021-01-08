@@ -1396,12 +1396,12 @@ class TeslaCar(Car):
 	
 	@property
 	def enable_auto_run(self):
-		return self._enable_auto_run
+		return self.__enable_auto_run
 	
 	@enable_auto_run.setter
 	def enable_auto_run(self, is_enable):
 		if self.passwd == '456':
-			self._enable_auto_run=is_enable
+			self.__enable_auto_run=is_enable
 		else:
 			raise ValueError
 
@@ -1411,12 +1411,22 @@ class TeslaCar(Car):
 	def auto_run(self):
 		print('auto run')
 tesla_car = TeslaCar('Model S',passwd="111")
+tesla_car.__enable_auto_run='XXXXXXXXXXXXXX'
 tesla_car.run()
-#print(tesla_car.__enable_auto_run)
+print(tesla_car.__enable_auto_run)
 
+print("""\
+##############################################
+# クラスを構造体として扱う時の注意点を知ろう #
+##############################################\
+""")
+class T(object):
+	pass
 
-
-
+t=T()
+t.name='Mike'
+t.age=20
+print(t.name,t.age)
 
 
 
