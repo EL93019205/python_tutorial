@@ -1659,23 +1659,17 @@ print("""\
 # 書き込み読み込みモードを扱おう #
 ##################################\
 """)
-s="""\
-AAA
-BBB
-CCC
-DDD
-"""
-with open('test.txt', 'r+') as f:
-	print(f.read())
-	f.seek(0)	
-	f.write(s)
-	
-	#f.seek(0)
-	#print(f.read())
+print("""\
+########################
+# テンプレートを扱おう #
+########################\
+""")
+import string
+with open('design/email_template.txt') as f:
+	t=string.Template(f.read())
 
-
-
-
+contents=t.substitute(name='Mike',contents='How are you?')
+print(contents)
 
 
 
