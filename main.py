@@ -1654,24 +1654,24 @@ print("""\
 # seekを使って移動しよう #
 ##########################\
 """)
+print("""\
+##################################
+# 書き込み読み込みモードを扱おう #
+##################################\
+""")
 s="""\
 AAA
 BBB
 CCC
 DDD
 """
-with open('test.txt', 'r') as f:
-	print(f.tell())
-	print(f.read(1))
-	f.seek(5)
-	print(f.read(1))
-	f.seek(14)
-	print(f.read(1))
-	f.seek(15)
-	print(f.read(1))
-	f.seek(5)
-	print(f.read(1))
-
+with open('test.txt', 'r+') as f:
+	print(f.read())
+	f.seek(0)	
+	f.write(s)
+	
+	#f.seek(0)
+	#print(f.read())
 
 
 
