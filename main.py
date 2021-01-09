@@ -1800,7 +1800,22 @@ with tempfile.TemporaryFile(mode='w+') as t:
 #temp_dir = tempfile.mkdtemp()
 #print(temp_dir)
 
-
+print("""\
+####################################
+# subprocessでコマンドを実行しよう #
+####################################\
+""")
+#import os
+#import subprocess
+#os.system('ls')
+#subprocess.run(['ls', '-al', '|', 'grep', 'test'])
+#r=subprocess.run('pwd', shell=True)
+#print(r.returncode)
+#p1=subprocess.Popen(['ls', '-al'], stdout=subprocess.PIPE)
+#p2=subprocess.Popen(['grep', 'test'], stdin=p1.stdout,stdout=subprocess.PIPE)
+#p1.stdout.close()
+#output=p2.communicate()[0]
+#print(output)
 
 
 
