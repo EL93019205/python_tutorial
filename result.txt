@@ -735,3 +735,7 @@ test_dir/sub_dir/subsub_dir/subsub_test.txt
 test_dir/sub_dir/sub_test.txt
 test_dir/test.txt
 b'test'
+####################
+# tempfileを扱おう #
+####################
+hello
